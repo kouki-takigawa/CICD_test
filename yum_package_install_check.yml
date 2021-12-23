@@ -9,3 +9,5 @@ shell:yum list installed | grep "{{ item }}"
 register: result
 with_items:
 - "{{ VAR_packages }}"
+
+
