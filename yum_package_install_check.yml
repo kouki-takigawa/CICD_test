@@ -1,4 +1,4 @@
-- name: install the latest version of packages second
+- name: install the latest version of packages sec
 yum:
 name: "{{ item }}"
 state: latest
