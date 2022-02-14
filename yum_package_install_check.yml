@@ -1,4 +1,4 @@
-- name: install the latest version of packages
+- name: install the latest version of packages second
 yum:
 name: "{{ item }}"
 state: latest
@@ -9,5 +9,11 @@ shell:yum list installed | grep "{{ item }}"
 register: result
 with_items:
 - "{{ VAR_packages }}"
+
+
+
+
+
+
 
 
