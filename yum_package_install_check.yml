@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 - name: install the latest version of packages test
+=======
+- name: install the latest version of packages sec
+>>>>>>> b8d15a6acf822ef0c08f45ca1890a4b22d6586d7
 yum:
 name: "{{ item }}"
 state: latest
@@ -9,5 +13,11 @@ shell:yum list installed | grep "{{ item }}"
 register: result
 with_items:
 - "{{ VAR_packages }}"
+
+
+
+
+
+
 
 
